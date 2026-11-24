@@ -231,3 +231,15 @@
 @media (max-width: 760px) {
   .trainer-cards { grid-template-columns: 1fr; }
 }
+
+/* トレーナー：左の大きな画像を外し、見出し・説明文の下に3名のカードを並べる */
+.trainer {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.trainer-copy {
+  max-width: 920px;
+}
+.trainer-list {
+  margin-top: 48px;
+}
