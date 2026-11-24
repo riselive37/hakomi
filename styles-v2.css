@@ -184,3 +184,50 @@
     padding: 48px 0;
   }
 }
+
+/* トレーナー紹介（11/22追加） */
+.trainer-list {
+  grid-column: 1 / -1;
+}
+.trainer-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 28px;
+}
+.trainer-card h3 {
+  margin: 4px 0 10px;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--green);
+}
+.trainer-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+.trainer-card .trainer-role {
+  margin-top: 14px;
+  font-size: 0.78rem;
+  color: var(--earth);
+}
+.trainer-photo {
+  display: block;
+  width: 100%;
+  max-width: 214px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.trainer-photo-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--line);
+  background: var(--milk);
+  color: var(--earth);
+  font-size: 0.8rem;
+}
+@media (max-width: 760px) {
+  .trainer-cards { grid-template-columns: 1fr; }
+}
